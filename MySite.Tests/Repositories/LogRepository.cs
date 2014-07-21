@@ -24,7 +24,7 @@ namespace MySite.Tests.Repositories
         {
             _configuration = Fluently.Configure()
               .Database(
-                  MsSqlConfiguration.MsSql2012.ShowSql().ConnectionString(@"Server=localhost;Database=MySiteModel;Trusted_Connection=True;"))
+                  MsSqlConfiguration.MsSql2012.ShowSql().ConnectionString(@"Server=NBK-FCACHO;Database=MySiteModel;User Id=MySiteUser;Password=abcd;"))
               .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Log>());
 
             _sessionFactory = _configuration.BuildSessionFactory(); ;
