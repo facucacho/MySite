@@ -5,18 +5,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySite", "MySite\MySite.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySite.Tests", "MySite.Tests\MySite.Tests.csproj", "{8AA0FD0B-F908-482E-86D7-A2FB042E624E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E6E0C9DF-40FB-49AD-B852-6029962246FB}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://development:8080/tfs/newplatform
-		SccLocalPath0 = .
+		SccProjectUniqueName0 = MySite\\MySite.csproj
+		SccProjectName0 = MySite
+		SccAuxPath0 = http://development:8080/tfs/newplatform
+		SccLocalPath0 = MySite
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccProjectUniqueName1 = MySite.Tests\\MySite.Tests.csproj
 		SccProjectName1 = MySite.Tests
+		SccAuxPath1 = http://development:8080/tfs/newplatform
 		SccLocalPath1 = MySite.Tests
-		SccProjectUniqueName2 = MySite\\MySite.csproj
-		SccProjectName2 = MySite
-		SccLocalPath2 = MySite
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
