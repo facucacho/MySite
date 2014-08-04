@@ -47,6 +47,20 @@ namespace MySite.Tests.Repositories
         }
 
         [TestMethod]
+        public void PuedoCrearUnLogValido2()
+        {
+            var id = 1;
+            var severity = 1;
+            var message = "un log";
+
+            var aLog = new Log(id, severity, message);
+            Assert.IsNotNull(aLog);
+            Assert.AreEqual(id, aLog.Id);
+            Assert.AreEqual(severity, aLog.Severity);
+            Assert.AreEqual(message, aLog.Message);
+        }
+
+        [TestMethod]
         public void PuedoAgregarUnLogValido()
         {
             CreateSchema();
